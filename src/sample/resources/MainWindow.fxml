@@ -1,0 +1,26 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<?import javafx.scene.control.TextArea?>
+<BorderPane fx:controller="sample.controller.MainWindowController"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="mainBorderPane">
+
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="ReadFromFile" onAction="#readFromFile"/>
+                <MenuItem text="SaveToFile"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Exit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TextArea fx:id="resultTextArea"/>
+    </center>
+</BorderPane>
