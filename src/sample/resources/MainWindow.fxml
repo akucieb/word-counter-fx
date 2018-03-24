@@ -13,7 +13,7 @@
         <MenuBar>
             <Menu text="File">
                 <MenuItem text="ReadFromFile" onAction="#readFromFile"/>
-                <MenuItem text="SaveToFile"/>
+                <MenuItem text="SaveToFile" onAction="#saveToFile"/>
                 <SeparatorMenuItem/>
                 <MenuItem text="Exit"/>
             </Menu>
